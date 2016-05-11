@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">StudentManagement</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="insert">Insert</string>
+    <string name="get_all">Get All</string>
+    <string name="msg_server_error">Server error</string>
+    <string name="msg_student_created">Student created w00t!</string>
+    <string name="msg_student_not_created">Student not created =(</string>
+    <string name="msg_students_not_fetched">Students not fetched =(</string>
+</resources>
