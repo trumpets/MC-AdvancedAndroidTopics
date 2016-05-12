@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    android:id="@+id/top_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -48,9 +49,16 @@
         android:layout_below="@id/btn_insert"
         android:text="@string/get_all"/>
 
+    <Button
+        android:id="@+id/btn_chose_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_query"
+        android:text="@string/choose_color"/>
+
     <ListView
         android:id="@+id/lv_results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_query"/>
+        android:layout_below="@id/btn_chose_color"/>
 </RelativeLayout>

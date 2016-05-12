@@ -5,8 +5,16 @@
     <string name="age">Age</string>
     <string name="insert">Insert</string>
     <string name="get_all">Get All</string>
+    <string name="choose_color">Choose Color</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="choose">Choose</string>
+
+    <!-- MESSAGES -->
     <string name="msg_server_error">Server error</string>
     <string name="msg_student_created">Student created w00t!</string>
     <string name="msg_student_not_created">Student not created =(</string>
     <string name="msg_students_not_fetched">Students not fetched =(</string>
+
 </resources>

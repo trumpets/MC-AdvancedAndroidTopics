@@ -22,6 +22,9 @@
         <activity android:name=".StudentDetailsActivity"
                   android:screenOrientation="portrait" />
 
+        <activity android:name=".ColorChooserActivity"
+                  android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>
