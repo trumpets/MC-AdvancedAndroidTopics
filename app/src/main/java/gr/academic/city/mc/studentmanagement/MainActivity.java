@@ -111,11 +111,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void getStudentsFromServer() {
         studentsApi.getAllStudents()
-                .enqueue(new Callback<List<Student>>() {
+                .enqueue(new Callback<ListResponse>() {
                     @Override
-                    public void onResponse(Call<List<Student>> call, Response<List<Student>> response) {
+                    public void onResponse(Call<ListResponse> call, Response<ListResponse> response) {
                         if (response.isSuccessful()) {
-                            students = response.body();
+                            students = response.body().getStudents();
                             lvResults.setAdapter(new ArrayAdapter<Student>(MainActivity.this, android.R.layout.simple_list_item_1, students));
                         } else {
                             showToast(R.string.msg_students_not_fetched);
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(Call<List<Student>> call, Throwable t) {
+                    public void onFailure(Call<ListResponse> call, Throwable t) {
                         showToast(R.string.msg_server_error);
                     }
                 });
